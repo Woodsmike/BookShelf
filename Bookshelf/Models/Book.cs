@@ -17,6 +17,7 @@ namespace Bookshelf.Models
         public string ISBN { get; set; }
 
         [ForeignKey("Category")]//establishes a relationship with another class (or table)
+        [Display(Name = "Category")]
         public int CategoryID { get; set; }
         public virtual Category Category { get; set; }
         //the first word is a navigation property.
